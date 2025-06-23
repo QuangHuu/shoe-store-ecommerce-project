@@ -1,0 +1,10 @@
+node_modules
+.env
+npm-debug.log
+Dockerfile
+.dockerignore
+.git
+.gitignore
+README.md
+LICENSE
+package-lock.json  # If you are using npm install --omit=dev, package-lock.json is not strictly needed in the final image

@@ -1,0 +1,39 @@
+# General OS and Editor junk
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
+
+# Node.js specific
+node_modules/
+package-lock.json # Only ignore if you're intentionally managing dependencies differently
+yarn.lock        # If you're using Yarn
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+
+# Logs and temporary files
+logs/
+tmp/
+*.log
+
+# Build output
+build/
+dist/
+
+# Dependency caches
+npm-debug.log*
+yarn-error.log*
+
+# Optional: Ignore coverage reports
+coverage/
+
+# Optional: Ignore bundled dependencies
+bundle/
