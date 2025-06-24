@@ -148,11 +148,6 @@ async function adminUpdateUserController(req, res, next) {
 
 async function deleteUser(req, res) {
     try {
-        // Authorization Check (CRITICAL) - Assuming you'll add this for delete,
-        // either restrict to self-delete or only admins, similar to updateUser/adminUpdateUser.
-        // For simplicity now, just pass through to service.
-        // Example: if (!req.user || (!req.user.isAdmin && req.user.id !== req.params.id)) { ... }
-
         const deletedUser = await userService.deleteUser(req.params.id);
         if (!deletedUser) {
             return res.status(404).json({ message: 'User not found' });
